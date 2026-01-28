@@ -7,6 +7,7 @@
 int match(char *a, char *b, size_t n)
 {
     size_t i = 0;
+
     while (i < n)
     {
         if (a[i] != b[i])
@@ -18,7 +19,7 @@ int match(char *a, char *b, size_t n)
 
 int main (int ac, char *av[])
 {
-    char buffer[4096];
+    char buffer[7000];
     char *pend;
     size_t cvp = 0, size;
     ssize_t r;
